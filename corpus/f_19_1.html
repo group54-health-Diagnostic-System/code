@@ -1,0 +1,674 @@
+Food and Recipes
+<div id="mainContent_ctr"> 
+ <div id="middleContent_fmt"> 
+  <div id="ContentPane5"> 
+   <script type="text/javascript">
+  <!--
+webmd.m.ss = {
+	delay: 5000,
+	init: function () {
+		var self = this;
+		self.ss = $("#ss");
+		self.current = 0;
+		self.length = self.ss.find('.slides .slide').length;
+		self.ss.find(".slide").not(':eq(0)').each(function () {
+			var a, alt, rel;
+			a = $(this).find('a');
+			alt = a.text().replace(/['"\\\/]+/g, '');
+			rel = a.attr('rel');
+			a.html( $('<img/>').attr({
+				src: rel,
+				alt: alt,
+				border: 0
+			}));
+		});
+		self.ss.on('click', '.btn', function() {
+			var i = self.ss.find('.btn').index(this);
+			self.stop();
+			self.goto(i);
+			return false;
+		});
+		webmd.m.ss.setActiveStyle();
+		webmd.m.ss.play();
+	},
+	play: function(){
+		var self = this;
+		self.stop();
+		self.interval = setInterval(function(){ self.next() }, self.delay)
+	},
+	stop: function(){
+		clearInterval(this.interval);
+	},
+	next:function(){
+		var i = this.current + 1;
+		if (i > this.length - 1) {
+			i = 0;
+		}
+		this.goto(i);
+	},
+	goto:function(i) {
+		var linkCurrent, linkNext;
+
+		this.ss.trigger('promoSlideChange');
+
+		linkCurrent = this.ss.find(".slide:eq(" + this.current + ") a");
+		linkNext = this.ss.find(".slide:eq(" + i + ") a");
+
+		if (linkCurrent != linkNext) {
+			linkCurrent.fadeOut("medium");
+			linkNext.fadeIn("medium");
+		}
+
+		this.current = i;
+
+		this.setActiveStyle();
+	},
+	setActiveStyle: function() {
+		var btns = this.ss.find('.btn'), btn = btns.eq(this.current);
+		btns.removeClass('on');
+		btn.addClass('on');
+	}
+};
+-->
+</script> 
+   <div class="cwpad_09"> 
+    <div id="ss"> 
+     <div class="slides"> 
+      <div class="slide first" id="x05"> 
+       <div id="btn_1" class="btn on"> 
+        <h2>Take The Taste Test</h2> 
+       </div> 
+       <a href="http://www.webmd.com/food-recipes/taste-assessment" rel="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/tocs/wellnessctr/balance_promos/342x265/listerine_good-taste_342x265_v02_a.jpg" onclick="return sl(this,'','promo-wc_1');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/tocs/wellnessctr/balance_promos/342x265/listerine_good-taste_342x265_v02_a.jpg" alt="Are you a foodie or picky eater" border="0" /> </a> 
+      </div> 
+      <div class="slide" id="x06"> 
+       <div id="btn_2" class="btn"> 
+        <h2>Keep Track of What You Eat</h2> 
+       </div> 
+       <a href="http://www.webmd.com/diet/food-fitness-planner/default.htm" rel="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/tocs/wellnessctr/cooking_promos/342x265/cooking_kep_track_of_what_you_eat.jpg" onclick="return sl(this,'','promo-wc_2');">woman eating cherries and taking notes</a> 
+      </div> 
+      <div class="slide" id="x07"> 
+       <div id="btn_3" class="btn"> 
+        <h2>5 Healthy Spices</h2> 
+       </div> 
+       <a href="http://www.webmd.com/food-recipes/5-spices-youre-not-using" rel="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/promos/2013/taste_hc_342x265_A.jpg" onclick="return sl(this,'','promo-wc_3');">listerine-tastehc342x265</a> 
+      </div> 
+     </div> 
+     <div class="controls"> 
+     </div> 
+    </div> 
+   </div> 
+   <script class="oas_template" id="oas_promo_promo-wc" type="text/html">
+  <div class="btn" id="btn_{link_position}">
+    <h2>{alt}</h2>
+  </div>
+  <a onclick="return sl(this,'','promo-wc_{link_position}');" href="{href}" rel="{img}">
+    <img src="{img}" alt="{alt}" border="0">
+    </img>
+  </a>
+</script> 
+   <script type="text/javascript">
+ 				webmd.oas = window.webmd.oas || {}; webmd.oas.mapping = window.webmd.oas.mapping || {};
+			webmd.oas.mapping['oas_promo_promo-wc'] = ['x05','x06','x07']; 
+webmd.m.ss.init();
+$(document).on('OASdone', function(){
+	webmd.debug('got OAS done event');
+	webmd.m.ss.goto(0);
+	webmd.m.ss.play();
+});
+</script> 
+   <script type="text/javascript">
+$(function () {
+	clearInterval(fadeSS);
+});
+</script> 
+   <div class="EditorialwBkgr_rdr" id="lnch-foodpromo"> 
+    <div class="EditorialwBkgr_top_fmt"> 
+    </div> 
+    <div class="EditorialwBkgr_content_fmt" style="background:transparent url(http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/modules/cooking-promo/recipe_2013_bkg.jpg) no-repeat scroll left top"> 
+     <h3>Healthy<br />Recipe Finder</h3> 
+     <p>Find something tasty for dinner tonight!</p> 
+     <a href="http://www.webmd.com/food-recipes/healthy-recipe-finder" onclick="return sl(this,'','lnch-foodpromo_btn');" class="btn"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/modules/ffp-promo/ffp_getstarted.png" alt="get started" border="0" /> </a> 
+    </div> 
+    <div class="EditorialwBkgr_bot_fmt"> 
+    </div> 
+   </div> 
+   <div class="moduleSpacer_rdr"> 
+   </div> 
+  </div> 
+  <div id="ContentPane6"> 
+   <div id="ed-food" class="hc2012hslider hc2012hslider4panel"> 
+    <div class="hc2012hslider_head"> 
+     <h3>People are Clicking On…</h3> 
+    </div> 
+    <div class="hc2012hslider_nav"> 
+     <a href="" class="hc2012hslider_nav_prev" onclick="wmdPageLink('ed-food_prev'); return false;"> <span class="jawsonly">Previous</span> </a> 
+     <a href="" class="hc2012hslider_nav_next" onclick="wmdPageLink('ed-food_next'); return false;"> <span class="jawsonly">Next</span> </a> 
+    </div> 
+    <div class="hc2012hslider_slides"> 
+     <div class="hc2012hslider_slide"> 
+      <div id="x32" class="hc2012hslider_slide_panel hc2012hslider_slide_panel1"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/diet/features/alkaline-diets-what-to-know" onclick="return sl(this,'','ed-food_1');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/features/_2011/12_2011/alkaline_diets_what_to_know_features/110x70_alkaline_diets_what_to_know_features.jpg" alt="Fresh vegetables" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         ARTICLE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/diet/features/alkaline-diets-what-to-know" onclick="return sl(this,'','ed-food_1');">Alkaline Diet: Pros and Cons</a> 
+       </div> 
+      </div> 
+      <div id="x33" class="hc2012hslider_slide_panel hc2012hslider_slide_panel2"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/digestive-disorders/celiac-disease/features/gluten-free-flours" onclick="return sl(this,'','ed-food_2');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/features/_2012/02_2012/gluten_free_flours_features/110x70_gluten_free_flours_features.jpg" alt="corn flour and gluten-free cakes" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         ARTICLE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/digestive-disorders/celiac-disease/features/gluten-free-flours" onclick="return sl(this,'','ed-food_2');">Guide to Gluten-Free Flours</a> 
+       </div> 
+      </div> 
+      <div id="x34" class="hc2012hslider_slide_panel hc2012hslider_slide_panel3"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/balance/caffeine-myths-and-facts" onclick="return sl(this,'','ed-food_3');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/quizzes/caffeine_rmq/caffeine_rmq/110x70_caffeine.jpg" alt="Hot cup of coffee" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         ARTICLE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/balance/caffeine-myths-and-facts" onclick="return sl(this,'','ed-food_3');">Caffeine Myths and Facts</a> 
+       </div> 
+      </div> 
+      <div id="x35" class="hc2012hslider_slide_panel hc2012hslider_slide_panel4"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/food-recipes/features/nutty-about-peanut-butter" onclick="return sl(this,'','ed-food_4');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/reference_guide/kids_recipe_apple_slices_with_peanut_butter_ref_guide/110x70_kids_recipe_apple_slices_with_peanut_butter_ref_guide.jpg" alt="apple slices with peanut butter" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         ARTICLE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/food-recipes/features/nutty-about-peanut-butter" onclick="return sl(this,'','ed-food_4');">Peanut Butter: Cooking and Shopping Tips</a> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="hc2012hslider_slide"> 
+      <div id="x36" class="hc2012hslider_slide_panel hc2012hslider_slide_panel1"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/food-recipes/features/cheap-healthy-15-nutritious-foods-about-2-dollars" onclick="return sl(this,'','ed-food_5');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/features/cheap_and_healthy_15_nutritious_foods_for_about_2_features/110x70_cheap_and_healthy_15_nutritious_foods_for_about_2_features.jpg" alt="brown rice salad with roasted peppers and scallion" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         ARTICLE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/food-recipes/features/cheap-healthy-15-nutritious-foods-about-2-dollars" onclick="return sl(this,'','ed-food_5');">15 Healthy Foods for About $2</a> 
+       </div> 
+      </div> 
+      <div id="x37" class="hc2012hslider_slide_panel hc2012hslider_slide_panel2"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/food-recipes/features/cheap-and-healthy-brown-bag-lunch-ideas-for-grownups" onclick="return sl(this,'','ed-food_6');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/features/cheap_and_healthy_brownbag_lunch_ideas_for_grownups__features/110x70_cheap_and_healthy_brownbag_lunch_ideas_for_grownups__features.jpg" alt="mixed race businesswoman opening paper bag at desk" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         ARTICLE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/food-recipes/features/cheap-and-healthy-brown-bag-lunch-ideas-for-grownups" onclick="return sl(this,'','ed-food_6');">10 Healthy Brown-Bag Lunch Ideas (for Grownups)</a> 
+       </div> 
+      </div> 
+      <div id="x38" class="hc2012hslider_slide_panel hc2012hslider_slide_panel3"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/food-recipes/guide/the-mediterranean-diet" onclick="return sl(this,'','ed-food_7');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/features/the_mediterranean_diet_features/110x70_the_mediterranean_diet_features.jpg" alt="Greek Salad" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         ARTICLE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/food-recipes/guide/the-mediterranean-diet" onclick="return sl(this,'','ed-food_7');">The Mediterranean Diet</a> 
+       </div> 
+      </div> 
+      <div id="x39" class="hc2012hslider_slide_panel hc2012hslider_slide_panel4"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/food-recipes/guide/10-ways-save-money-food-shopping" onclick="return sl(this,'','ed-food_8');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/reference_guide/10_ways_to_trim_your_grocery_bill_ref_guide/110x70_10_ways_to_trim_your_grocery_bill_ref_guide.jpg" alt="receipt in bag of groceries" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         ARTICLE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/food-recipes/guide/10-ways-save-money-food-shopping" onclick="return sl(this,'','ed-food_8');">10 Ways to Trim Your Grocery Bill</a> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <script class="oas_template" id="health-center-slider_ed-food" type="text/html">
+  <div class="attr {attr_active}">
+    <a class="{attr_link}" onclick="return sl(this,'sp','disclaimer');" href="{attr_link}">{attr_text}</a>
+    <span>{attr}</span>
+  </div>
+  <div class="hc2012hslider_slide_panel_img">
+    <a onclick="return sl(this,'','ed-food_{link_position}');" href="{href}">
+      <img src="{img}" alt="{alt_text}" />
+    </a>
+  </div>
+  <div class="hc2012hslider_slide_panel_text">{text}</div>
+  <div class="hc2012hslider_slide_panel_link type_{type}">
+    <a onclick="return sl(this,'','ed-food_{link_position}');" href="{href}">{alt}</a>
+  </div>
+</script> 
+   <script type="text/javascript">
+ 				webmd.oas = window.webmd.oas || {}; webmd.oas.mapping = window.webmd.oas.mapping || {};
+			webmd.oas.mapping['health-center-slider_ed-food'] = ['x32','x33','x34','x35','x36','x37','x38','x39']; </script> 
+  </div> 
+  <div id="ContentPane7"> 
+   <div id="ed-recipe" class="hc2012hslider hc2012hslider4panel"> 
+    <div class="hc2012hslider_head"> 
+     <h3>Most Popular Recipes</h3> 
+    </div> 
+    <div class="hc2012hslider_nav"> 
+     <a href="" class="hc2012hslider_nav_prev" onclick="wmdPageLink('ed-recipe_prev'); return false;"> <span class="jawsonly">Previous</span> </a> 
+     <a href="" class="hc2012hslider_nav_next" onclick="wmdPageLink('ed-recipe_next'); return false;"> <span class="jawsonly">Next</span> </a> 
+    </div> 
+    <div class="hc2012hslider_slides"> 
+     <div class="hc2012hslider_slide"> 
+      <div id="x86" class="hc2012hslider_slide_panel hc2012hslider_slide_panel1"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/food-recipes/whole-grain-chicken-noodle-soup-recipe" onclick="return sl(this,'','ed-recipe_1');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/recipes/whole_grain_chicken_noodle_soup_recipe/110x70_whole_grain_chicken_noodle_soup_recipe.jpg" alt="whole grain noodles" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         RECIPE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/food-recipes/whole-grain-chicken-noodle-soup-recipe" onclick="return sl(this,'','ed-recipe_1');">Whole-Grain Chicken Noodle Soup</a> 
+       </div> 
+      </div> 
+      <div id="x87" class="hc2012hslider_slide_panel hc2012hslider_slide_panel2"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/food-recipes/3-cheese-sauce" onclick="return sl(this,'','ed-recipe_2');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/recipes/3_cheese_sauce_recipe/110x70_3_cheese_sauce_recipe.jpg" alt="cheese sauce" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         RECIPE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/food-recipes/3-cheese-sauce" onclick="return sl(this,'','ed-recipe_2');">3-Cheese Sauce</a> 
+       </div> 
+      </div> 
+      <div id="x88" class="hc2012hslider_slide_panel hc2012hslider_slide_panel3"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/food-recipes/fruit-cream-crisp-recipe" onclick="return sl(this,'','ed-recipe_3');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/recipes/fruit_cream_crisp_recipe/110x70_fruit_cream_crisp_recipe.jpg" alt="fruit crisp" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         RECIPE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/food-recipes/fruit-cream-crisp-recipe" onclick="return sl(this,'','ed-recipe_3');">Fruit and Cream Crisp</a> 
+       </div> 
+      </div> 
+      <div id="x89" class="hc2012hslider_slide_panel hc2012hslider_slide_panel4"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/food-recipes/irish-chicken-dumplings-recipe" onclick="return sl(this,'','ed-recipe_4');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/recipes/irish_chicken_dumplings_recipe/110x70_irish_chicken_dumplings_recipe.jpg" alt="chicken and dumplings" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         RECIPE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/food-recipes/irish-chicken-dumplings-recipe" onclick="return sl(this,'','ed-recipe_4');">Irish Chicken and Dumplings</a> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="hc2012hslider_slide"> 
+      <div id="x90" class="hc2012hslider_slide_panel hc2012hslider_slide_panel1"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/food-recipes/rustic-irish-potato-and-cabbage-soup" onclick="return sl(this,'','ed-recipe_5');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/recipes/rustic_irish_potato_cabbage_soup_recipe/110x70_rustic_irish_potato_cabbage_soup_recipe.jpg" alt="potato cabbage soup" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         RECIPE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/food-recipes/rustic-irish-potato-and-cabbage-soup" onclick="return sl(this,'','ed-recipe_5');">Rustic Irish Potato and Cabbage Soup</a> 
+       </div> 
+      </div> 
+      <div id="x91" class="hc2012hslider_slide_panel hc2012hslider_slide_panel2"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/food-recipes/pesto-egg-salad" onclick="return sl(this,'','ed-recipe_6');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/recipes/pesto_egg_salad_recipe/110x70_pesto_egg_salad_recipe.jpg" alt="pesto egg salad" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         RECIPE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/food-recipes/pesto-egg-salad" onclick="return sl(this,'','ed-recipe_6');">Pesto Egg Salad</a> 
+       </div> 
+      </div> 
+      <div id="x92" class="hc2012hslider_slide_panel hc2012hslider_slide_panel3"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/food-recipes/chicken-with-peanuts-noodle" onclick="return sl(this,'','ed-recipe_7');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/recipes/chicken_with_peanuts_noodle_recipe/110x70_chicken_with_peanuts_noodle_recipe.jpg" alt="chicken with peanuts noodles" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         RECIPE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/food-recipes/chicken-with-peanuts-noodle" onclick="return sl(this,'','ed-recipe_7');">Chicken With Peanuts and Noodles</a> 
+       </div> 
+      </div> 
+      <div id="x93" class="hc2012hslider_slide_panel hc2012hslider_slide_panel4"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/food-recipes/mixed-lettuce-salad-with-cucumber-herb-vinaigrette" onclick="return sl(this,'','ed-recipe_8');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/recipes/mixed_lettuce_salad_with_cucumber_recipe/110x70_mixed_lettuce_salad_with_cucumber_recipe.jpg" alt="salad" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         RECIPE 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/food-recipes/mixed-lettuce-salad-with-cucumber-herb-vinaigrette" onclick="return sl(this,'','ed-recipe_8');">Mixed Lettuce Salad With Cucumber Herb Vinaigrette</a> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <script class="oas_template" id="health-center-slider_ed-recipe" type="text/html">
+  <div class="attr {attr_active}">
+    <a class="{attr_link}" onclick="return sl(this,'sp','disclaimer');" href="{attr_link}">{attr_text}</a>
+    <span>{attr}</span>
+  </div>
+  <div class="hc2012hslider_slide_panel_img">
+    <a onclick="return sl(this,'','ed-recipe_{link_position}');" href="{href}">
+      <img src="{img}" alt="{alt_text}" />
+    </a>
+  </div>
+  <div class="hc2012hslider_slide_panel_text">{text}</div>
+  <div class="hc2012hslider_slide_panel_link type_{type}">
+    <a onclick="return sl(this,'','ed-recipe_{link_position}');" href="{href}">{alt}</a>
+  </div>
+</script> 
+   <script type="text/javascript">
+ 				webmd.oas = window.webmd.oas || {}; webmd.oas.mapping = window.webmd.oas.mapping || {};
+			webmd.oas.mapping['health-center-slider_ed-recipe'] = ['x86','x87','x88','x89','x90','x91','x92','x93']; </script> 
+  </div> 
+  <div id="ContentPane8"></div> 
+  <div id="ContentPane9"> 
+   <div id="ed-tools" class="hc2012hslider hc2012hslider4panel"> 
+    <div class="hc2012hslider_head"> 
+     <h3>Editor's Picks</h3> 
+    </div> 
+    <div class="hc2012hslider_nav"> 
+     <a href="" class="hc2012hslider_nav_prev" onclick="wmdPageLink('ed-tools_prev'); return false;"> <span class="jawsonly">Previous</span> </a> 
+     <a href="" class="hc2012hslider_nav_next" onclick="wmdPageLink('ed-tools_next'); return false;"> <span class="jawsonly">Next</span> </a> 
+    </div> 
+    <div class="hc2012hslider_slides"> 
+     <div class="hc2012hslider_slide"> 
+      <div class="hc2012hslider_slide_panel hc2012hslider_slide_panel1"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/cholesterol-management/rm-quiz-fish-oil-facts" onclick="return sl(this,'','ed-tools_1');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/quizzes/fish_oil__rmq/110x70_fish_oil__rmq.jpg" alt="salmon steak with lemon on ice" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         Quiz 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_quiz"> 
+        <a href="http://www.webmd.com/cholesterol-management/rm-quiz-fish-oil-facts" onclick="return sl(this,'','ed-tools_1');">Fish Oil Facts</a> 
+       </div> 
+      </div> 
+      <div class="hc2012hslider_slide_panel hc2012hslider_slide_panel2"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/parenting/raising-fit-kids/food/slideshow-grocery-shopping-myths" onclick="return sl(this,'','ed-tools_2');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/14_grocery_shopping_myths_slideshow/110x70_14_grocery_shopping_myths_slideshow_alt1.jpg" alt="woman shopping" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         Slideshow 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_ss"> 
+        <a href="http://www.webmd.com/parenting/raising-fit-kids/food/slideshow-grocery-shopping-myths" onclick="return sl(this,'','ed-tools_2');">14 Grocery Shopping Myths</a> 
+       </div> 
+      </div> 
+      <div class="hc2012hslider_slide_panel hc2012hslider_slide_panel3"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/oral-health/healthy-teeth-4/dental-care-tv?vid=vd-2125-wrld-0005" onclick="return sl(this,'','ed-tools_3');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/video/best_foods_for_your_teeth_video/110x70_best_foods_for_your_teeth_video.jpg" alt="assorted fruits" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         Video 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_vid"> 
+        <a href="http://www.webmd.com/oral-health/healthy-teeth-4/dental-care-tv?vid=vd-2125-wrld-0005" onclick="return sl(this,'','ed-tools_3');">Best Foods for Your Teeth</a> 
+       </div> 
+      </div> 
+      <div class="hc2012hslider_slide_panel hc2012hslider_slide_panel4"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/children/digestion-in-children-11/fiber-rich-lunch" onclick="return sl(this,'','ed-tools_4');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/features/_2012/02_2012/fiberrich_sack_lunches_features/110x70_fiberrich_sack_lunches_features.jpg" alt="lunchbox" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         Article 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/children/digestion-in-children-11/fiber-rich-lunch" onclick="return sl(this,'','ed-tools_4');">Fiber-Rich Lunches for Kids</a> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="hc2012hslider_slide"> 
+      <div class="hc2012hslider_slide_panel hc2012hslider_slide_panel1"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/digestive-disorders/lactose-intolerance-12/options" onclick="return sl(this,'','ed-tools_5');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/lactose_intolerance_14_ways_to_still_love_dairy/110x70_lactose_intolerance_14_ways_to_still_love_dairy.jpg" alt="glass of dairy breakfast shake" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         Article 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/digestive-disorders/lactose-intolerance-12/options" onclick="return sl(this,'','ed-tools_5');">Lactose Intolerant? 14 Ways to Still Enjoy Dairy</a> 
+       </div> 
+      </div> 
+      <div class="hc2012hslider_slide_panel hc2012hslider_slide_panel2"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/rheumatoid-arthritis/ra-diet" onclick="return sl(this,'','ed-tools_6');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/features/4_inflammation_fighting_foods_for_ra_features/110x70_4_inflammation_fighting_foods_for_ra_features.jpg" alt="Raw salmon steaks, olive oil, lemon and broccoli" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         Article 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/rheumatoid-arthritis/ra-diet" onclick="return sl(this,'','ed-tools_6');">4 Foods That Fight Inflammation</a> 
+       </div> 
+      </div> 
+      <div class="hc2012hslider_slide_panel hc2012hslider_slide_panel3"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/eye-health/eye-vision-tv/default.htm?vid=vd-3007-cntv-ed-1002" onclick="return sl(this,'','ed-tools_7');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/video/food_for_your_eyes_video/110x70_food_for_your_eyes_video.jpg" alt="foods for your eyes" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         Video 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_vid"> 
+        <a href="http://www.webmd.com/eye-health/eye-vision-tv/default.htm?vid=vd-3007-cntv-ed-1002" onclick="return sl(this,'','ed-tools_7');">Best Foods for Your Eyes</a> 
+       </div> 
+      </div> 
+      <div class="hc2012hslider_slide_panel hc2012hslider_slide_panel4"> 
+       <div class="hc2012hslider_slide_panel_img"> 
+        <a href="http://www.webmd.com/parenting/raising-fit-kids/food/kid-friendly-recipes" onclick="return sl(this,'','ed-tools_8');"> <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/kid_friendly_recipes_directory_other/110x70_kid_friendly_recipes_directory_other.jpg" alt="boy cooking in chefs uniform" /> </a> 
+       </div> 
+       <div class="hc2012hslider_slide_panel_text">
+         Article 
+       </div> 
+       <div class="hc2012hslider_slide_panel_link type_tool"> 
+        <a href="http://www.webmd.com/parenting/raising-fit-kids/food/kid-friendly-recipes" onclick="return sl(this,'','ed-tools_8');">Kid-Friendly Recipes</a> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div id="ContentPane10"> 
+   <div class="latest-headlines"> 
+    <div class="subheaderBar"> 
+     <span class="rss"> <a id="rssFeedLink" class="rss_link" href="http://rssfeeds.webmd.com/rss/rss.aspx" onclick="return sl(this,'','news-ftr_rss');">RSS Feed</a> | <a href="http://www.webmd.com/rss/default.htm" onclick="return sl(this,'','news-ftr_hlp');">Help</a></span> 
+     <h2>News and Features</h2> 
+    </div> 
+    <script type="text/javascript"><!--
+/* Create a feed to match the center_ID variable with the RSS FeedID to pass to the URL */
+var rssFeeds = [
+    {"centerName": "ADD/ADHD","centerID": "1178","feedID": "1001"},
+    {"centerName": "Allergies","centerID": "893","feedID": "1004"},
+    {"centerName": "Alzheimer's","centerID": "1030","feedID": "1005"},
+    {"centerName": "Anxiety & Panic Disorders","centerID": "648","feedID": "1007"},
+    {"centerName": "Arthritis","centerID": "1194","feedID": "1008"},
+    {"centerName": "Asthma","centerID": "947","feedID": "1009"},
+    {"centerName": "Back Pain","centerID": "972","feedID": "1010"},
+	{"centerName": "Balance","centerID": "840","feedID": "1081"},
+    {"centerName": "Bipolar Disorder","centerID": "694","feedID": "1013"},
+    {"centerName": "Breast Cancer","centerID": "1074","feedID": "1020"},
+    {"centerName": "Cancer","centerID": "848","feedID": "1022"},
+	{"centerName": "Cats","centerID": "2935","feedID": "1698"},
+    {"centerName": "Cholesterol Management","centerID": "1017","feedID": "1026"},
+    {"centerName": "Cold & Flu","centerID": "1202","feedID": "1029"},
+    {"centerName": "Crohn's Disease","centerID": "1018","feedID": "1119"},
+    {"centerName": "Depression","centerID": "1020","feedID": "1032"},
+    {"centerName": "Diabetes","centerID": "1037","feedID": "1033"},
+	{"centerName": "Diet & Weight Loss","centerID": "1004","feedID": "1115"},
+	{"centerName": "Dogs","centerID": "2936","feedID": "1697"},
+	{"centerName": "Fitness & Exercise","centerID": "960","feedID": "1046"},
+	{"centerName": "Food & Cooking","centerID": "745","feedID": "1047"},
+    {"centerName": "Hearth Health","centerID": "948","feedID": "1056"},
+    {"centerName": "Heartburn/GERD","centerID": "1134","feedID": "1057"},
+    {"centerName": "Hypertension/High Blood Pressure","centerID": "1011","feedID": "1063"},
+    {"centerName": "Incontinence/OAB","centerID": "961","feedID": "1112"},
+    {"centerName": "Lupus","centerID": "829","feedID": "1073"},
+    {"centerName": "Menopause","centerID": "789","feedID": "1077"},
+    {"centerName": "Migraines/Headaches","centerID": "903","feedID": "1080"},
+    {"centerName": "Oral Health","centerID": "872","feedID": "1085"},
+    {"centerName": "Osteoporosis","centerID": "1166","feedID": "1088"},
+	{"centerName": "Parenting","centerID": "1190","feedID": "1091"},
+	{"centerName": "Pets","centerID": "2934","feedID": "1696"},
+	{"centerName": "Pregnancy","centerID": "793","feedID": "1096"},
+	{"centerName": "Sex & Relationships","centerID": "865","feedID": "1101"},
+	{"centerName": "Skin & Beauty","centerID": "1013","feedID": "1011"},
+    {"centerName": "Skin Problems & Treatments","centerID": "1028","feedID": "1105"},
+    {"centerName": "Sleep Disorders","centerID": "1206","feedID": "1106"}
+];
+
+var feedID = "";
+    feedURL = document.getElementById('rssFeedLink');
+    for (i=0;i<rssFeeds.length;i++) {				
+        curCenter = rssFeeds[i].centerID;
+        if (curCenter == center_id) {
+        feedID = rssFeeds[i].feedID;
+        if(feedID=="1696"||feedID=="1697"||feedID=="1698"){
+			feedURL.href = feedURL.href + "?list=pets&channel=" + feedID;
+		}else{
+			feedURL.href = feedURL.href + "?cid=" + feedID;
+		}
+        break;
+        }
+    }
+
+//--></script> 
+    <div class="editorial"> 
+     <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/news/healthday/2014/01/56036.jpg" alt="Thumbnail Image:Scientists Probe Dark Chocolate's Health Secrets" class="icon" /> 
+     <h3> <a href="http://www.webmd.com/food-recipes/news/20140318/scientists-probe-dark-chocolates-health-secrets" onclick="return sl(this,'','news-ftr_1-1');">Scientists Probe Dark Chocolate's Health Secrets</a> </h3> 
+     <p>Heart benefits may stem from reaction in stomach bacteria, research suggests</p> 
+     <p> <a class="read_link" href="http://www.webmd.com/food-recipes/news/20140318/scientists-probe-dark-chocolates-health-secrets" onclick="return sl(this,'','news-ftr_1-more');">Read More</a> </p> 
+    </div> 
+    <div class="features"> 
+     <div class="features_grp col_1"> 
+      <h4 class="title">Top Stories</h4> 
+      <ul> 
+       <li> <a href="http://www.webmd.com/food-recipes/news/20140228/new-nutrition-labels-faq" onclick="return sl(this,'','news-ftr_2-1');">FAQ: New Nutrition Facts Label</a> </li> 
+       <li> <a href="http://www.webmd.com/food-recipes/news/20140210/kraft-singles-preservatives" onclick="return sl(this,'','news-ftr_2-2');">No More Artificial Preservatives in 2 Kraft Singles Varieties</a> </li> 
+      </ul> 
+     </div> 
+     <div class="features_grp col_2 no_header"> 
+      <ul> 
+       <li id="x08"> <a href="http://www.webmd.com/food-recipes/features/foods-fight-fatigue" onclick="return sl(this,'','news-ftr_3-1');">Foods to Fight Fatigue</a> </li> 
+       <li id="x09"> <a href="http://www.webmd.com/food-recipes/healthtool-condiments-table" onclick="return sl(this,'','news-ftr_3-2');">How Long Can You Keep Condiments?</a> </li> 
+      </ul> 
+     </div> 
+     <script class="oas_template" id="oas_top_stories" type="text/html">
+      <a onclick="return sl(this,'','news-ftr_3-{link_position}');" href="{href}">{alt}</a>
+    </script> 
+     <script type="text/javascript">
+				webmd.oas = window.webmd.oas || {}; webmd.oas.mapping = window.webmd.oas.mapping || {}; webmd.oas.mapping['oas_top_stories'] = ['x08','x09','x10','x11','x12','x13','x14','x15'];
+			</script> 
+    </div> 
+   </div> 
+  </div> 
+  <div id="ContentPane11"> 
+   <div id="ex-tips" class="two-col-editorial"> 
+    <h2 class="no_description">Discussions and Communities</h2> 
+    <div class="col_1_layout"> 
+     <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/community/whats_in_your_fridge_community/110x70_whats_in_your_fridge_community.jpg" alt="woman looking into fridge" class="icon" /> 
+     <div class="editorial"> 
+      <h3>[blank]</h3> 
+      <ul class="articles"> 
+       <li> <a class="type_com" href="http://forums.webmd.com/3/food-and-cooking-exchange/forum/1832" onclick="return sl(this,'','ex-tips_1-2');">What's in your fridge?<i> </i></a> </li> 
+       <li> <a class="type_com" href="http://forums.webmd.com/3/food-and-cooking-exchange/forum/1146" onclick="return sl(this,'','ex-tips_1-3');">What's Good About Iced Tea (and what you need to watch out for)<i> </i></a> </li> 
+       <li> <a class="type_com" href="http://forums.webmd.com/3/food-and-cooking-exchange/forum/1175" onclick="return sl(this,'','ex-tips_1-4');">I eat great, but cannot lose weight!!!<i> </i></a> </li> 
+       <li> <a class="type_com" href="http://forums.webmd.com/3/food-and-cooking-exchange/forum/1840" onclick="return sl(this,'','ex-tips_1-5');">Recipe swap! Crock pot ideas<i> </i></a> </li> 
+       <li class="see_all_link"> <a class="type_com" href="http://exchanges.webmd.com/food-and-cooking-exchange" onclick="return sl(this,'','ex-tips_1-6');"> See All Discussions<i> </i></a> </li> 
+      </ul> 
+     </div> 
+    </div> 
+    <div class="col_2_layout"> 
+     <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/community/whats_in_your_fridge_community/110x70_fish.jpg" alt="Fish Fraud" class="icon" /> 
+     <div class="editorial"> 
+      <h3>[blank]</h3> 
+      <ul class="articles"> 
+       <li> <a class="type_com" href="http://blogs.webmd.com/food-and-nutrition/2014/03/what-is-processed-food-exactly.html" onclick="return sl(this,'','ex-tips_2-2');">What Is &quot;Processed&quot; Food?<i> </i></a> </li> 
+       <li> <a class="type_com" href="http://blogs.webmd.com/food-and-nutrition/2014/01/is-organic-milk-worth-the-price.html" onclick="return sl(this,'','ex-tips_2-3');">Is Organic Milk Worth the Price?<i> </i></a> </li> 
+       <li> <a class="type_com" href="http://blogs.webmd.com/food-and-nutrition/2014/01/eating-in-2014-tips-and-trends.html" onclick="return sl(this,'','ex-tips_2-4');">What to Eat in 2014<i> </i></a> </li> 
+       <li> <a class="type_com" href="http://blogs.webmd.com/food-and-nutrition/2014/01/foods-that-may-keep-the-flu-away.html" onclick="return sl(this,'','ex-tips_2-5');">Foods to Fight the Flu<i> </i></a> </li> 
+       <li class="see_all_link"> <a class="type_com" href="http://blogs.webmd.com/food-and-nutrition/" onclick="return sl(this,'','ex-tips_2-6');"> See All Blogs<i> </i></a> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div id="ContentPane12"></div> 
+  <div id="ContentPane13"> 
+   <div class="multi-grp-linked-list"> 
+    <h3 class="no_description">More In Healthy Living</h3> 
+    <div class="unord-lists layout_4_col"> 
+     <div class="col_1"> 
+      <h4>FOOD &amp; RECIPES</h4> 
+      <ul> 
+       <li> <a href="http://www.webmd.com/food-recipes/guide/health-cooking-healthy-kitchen" onclick="return sl(this,'Page Refresh(Default)','gd-info_1');">Nutrition</a> </li> 
+       <li> <a href="http://www.webmd.com/food-recipes/guide/health-cooking-start-cooking" onclick="return sl(this,'Page Refresh(Default)','gd-info_2');">Cooking Tips</a> </li> 
+       <li> <a href="http://www.webmd.com/food-recipes/healthy-recipe-finder" onclick="return sl(this,'Page Refresh(Default)','gd-info_3');">Recipes</a> </li> 
+       <li> <a href="http://www.webmd.com/food-recipes/guide/myplate-food-groups-and-portions" onclick="return sl(this,'Page Refresh(Default)','gd-info_4');">Dietary Guidelines</a> </li> 
+       <li> <a href="http://www.webmd.com/food-recipes/guide/food-safety-cooking-topic-overview" onclick="return sl(this,'Page Refresh(Default)','gd-info_5');">Food Safety</a> </li> 
+       <li> <a href="http://www.webmd.com/food-recipes/guide/health-cooking-help-support" onclick="return sl(this,'Page Refresh(Default)','gd-info_6');">Food Resources</a> </li> 
+      </ul> 
+     </div> 
+     <div class="col_2"> 
+      <h4>FITNESS &amp; EXERCISE</h4> 
+      <ul> 
+       <li> <a href="http://www.webmd.com/fitness-exercise/guide/health-fitness-fact-vs-fiction" onclick="return sl(this,'Page Refresh(Default)','gd-info_7');">Exercise Benefits</a> </li> 
+       <li> <a href="http://www.webmd.com/fitness-exercise/guide/health-fitness-tips-success" onclick="return sl(this,'Page Refresh(Default)','gd-info_8');">Tips for Success</a> </li> 
+       <li> <a href="http://www.webmd.com/fitness-exercise/guide/health-fitness-get-lean" onclick="return sl(this,'Page Refresh(Default)','gd-info_9');">Get Lean</a> </li> 
+       <li> <a href="http://www.webmd.com/fitness-exercise/guide/health-fitness-get-strong" onclick="return sl(this,'Page Refresh(Default)','gd-info_10');">Get Strong</a> </li> 
+       <li> <a href="http://www.webmd.com/fitness-exercise/guide/health-fitness-fuel-your-body" onclick="return sl(this,'Page Refresh(Default)','gd-info_11');">Fuel Your Body</a> </li> 
+       <li> <a href="http://www.webmd.com/fitness-exercise/guide/health-fitness-expert-help" onclick="return sl(this,'Page Refresh(Default)','gd-info_12');">Expert Advice</a> </li> 
+      </ul> 
+     </div> 
+     <div class="col_3"> 
+      <h4>WEIGHT LOSS &amp; DIET</h4> 
+      <ul> 
+       <li> <a href="http://www.webmd.com/diet/guide/obesity-and-weight-loss" onclick="return sl(this,'Page Refresh(Default)','gd-info_13');">Weight Loss Basics</a> </li> 
+       <li> <a href="http://www.webmd.com/diet/evaluate-latest-diets" onclick="return sl(this,'Page Refresh(Default)','gd-info_14');">Popular Diet Plans</a> </li> 
+       <li> <a href="http://www.webmd.com/diet/guide/health-and-diet-supplements" onclick="return sl(this,'Page Refresh(Default)','gd-info_15');">Weight Loss Strategies</a> </li> 
+       <li> <a href="http://www.webmd.com/diet/guide/healthy-eating-and-diet-real-life-tips" onclick="return sl(this,'Page Refresh(Default)','gd-info_16');">Tools and Calculators</a> </li> 
+       <li> <a href="http://exchanges.webmd.com/diet-exchange" onclick="return sl(this,'Page Refresh(Default)','gd-info_17');">Diet Support</a> </li> 
+       <li> <a href="http://www.webmd.com/food-recipes/features/500-calorie-poultry-menus" onclick="return sl(this,'Page Refresh(Default)','gd-info_18');">500-Calorie Menus</a> </li> 
+      </ul> 
+     </div> 
+     <div class="col_4"> 
+      <h4>HEALTHY EATING GUIDES</h4> 
+      <ul> 
+       <li> <a class="type_ss" href="http://www.webmd.com/diet/ss/slideshow-high-protein-diet" onclick="return sl(this,'Page Refresh(Default)','gd-info_19');">High Protein<i> </i></a> </li> 
+       <li> <a class="type_ss" href="http://www.webmd.com/diet/ss/slideshow-gluten-free-diet" onclick="return sl(this,'Page Refresh(Default)','gd-info_20');">Gluten-Free <i> </i></a> </li> 
+       <li> <a class="type_ss" href="http://www.webmd.com/diet/ss/slideshow-salt-shockers" onclick="return sl(this,'Page Refresh(Default)','gd-info_21');">Low-Sodium<i> </i></a> </li> 
+       <li> <a href="http://www.webmd.com/food-recipes/guide/raw-food-diet" onclick="return sl(this,'Page Refresh(Default)','gd-info_22');">Raw Food</a> </li> 
+       <li> <a href="http://www.webmd.com/food-recipes/guide/vegetarian-and-vegan-diet" onclick="return sl(this,'Page Refresh(Default)','gd-info_23');">Vegetarian and Vegan</a> </li> 
+       <li> <a class="type_ss" href="http://www.webmd.com/parenting/family-health-12/slideshow-energy-foods" onclick="return sl(this,'Page Refresh(Default)','gd-info_24');">Foods for Energy<i> </i></a> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div id="ContentPane14"></div> 
+  <div id="ContentPane15"></div> 
+  <div id="ContentPane16"></div> 
+  <div id="ContentPane17"></div> 
+  <div id="ContentPane18"></div> 
+  <div id="ContentPane19"></div> 
+  <div id="ContentPane20"></div> 
+ </div> 
+</div>

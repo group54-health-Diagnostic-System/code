@@ -1,0 +1,20 @@
+Errors
+
+
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2fparenting%2fslideshow-baby-milestones-first-year
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2fparenting%2fslideshow-baby-milestones-first-year
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2fchildren%2funderstanding-cystic-fibrosis-basics
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2fmen%2ftc%2fBenign-Prostatic-Hyperplasia-BPH-Topic-Overview
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2ffood-recipes%2fexotic-fruits-slideshow
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2fa-to-z-guides%2fWeakness-and-Fatigue-Topic-Overview
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2ffood-recipes%2fexotic-fruits-slideshow
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2fchildren%2fgrowing-pains
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2fdiabetes%2fguide%2fdiabetes-insulin-resistance-syndrome
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2ffirstaid%2finternal-bleeding-causes-signs
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2fa-to-z-guides%2fMumps-Topic-Overview
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2fwomen%2fWomen-Medical-Reference%2fsexual-health-your-guide-to-pelvic-inflammatory-disease
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2fwomen%2fguide%2fsexual-health-your-guide-to-premenstrual-syndrome
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2fwomen%2fWomen-Medical-Reference%2fstaph-infection-cellulitis
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2fchildren%2ftc%2fTeething-Topic-Overview
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=http://www.webmd.com/404?aspxerrorpath=%2fdiet%2ffeatures%2ftrans-fats-in-plain-view
+

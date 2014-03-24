@@ -1,0 +1,5 @@
+Jaundice   link:http://www.webmd.com/children/digestive-diseases-jaundice
+Jetlag   link:http://www.webmd.com/sleep-disorders/sleep-disorders-sleep-travel
+Jock Itch   link:http://www.webmd.com/men/tc/Jock-Itch-Topic-Overview
+Joint Damage   link:http://www.webmd.com/rheumatoid-arthritis/guide/preventing-joint-damage-rheumatoid-arthritis
+Juvenile Diabetes   link:http://www.webmd.com/diabetes/guide/default.htm

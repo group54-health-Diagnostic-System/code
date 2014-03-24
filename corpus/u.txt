@@ -1,0 +1,7 @@
+Ulcers   link:http://www.webmd.com/digestive-disorders/understanding-ulcers-basic-information
+Ulcerative Colitis   link:http://www.webmd.com/ibd-crohns-disease/colitis-guide/Ulcerative-Colitis-Topic-Overview
+Ultrasound   link:http://www.webmd.com/a-to-z-guides/what-is-an-ultrasound
+Urethritis   link:http://www.webmd.com/a-to-z-guides/urethritis-symptoms-causes-treatments
+Urinary Tract Infection   link:http://www.webmd.com/a-to-z-guides/Urinary-Tract-Infections-in-Teens-and-Adults-Topic-Overview
+Uterine Fibroids   link:http://www.webmd.com/infertility-and-reproduction/guide/sexual-health-your-guide-to-uterine-fibroids
+Uterine/Cervical Cancer   link:http://www.webmd.com/cancer/tc/Endometrial-Cancer-Topic-Overview

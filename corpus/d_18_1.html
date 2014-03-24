@@ -1,0 +1,142 @@
+Dry Skin
+<div id="mainContent_ctr"> 
+ <div id="middleContent_fmt"> 
+  <div id="ContentPane5"> 
+   <div class="nextArticleBox_rdr" id="art-top"> 
+    <h5>Next Article:</h5> 
+    <a href="#article" class="hide_label">Skip to Article Content</a> 
+    <ul> 
+     <li> <a href="http://www.webmd.com/beauty/dry-skin-13/dry-skin-causes" title="Go to next article" onclick="return sl(this,'','art-top_1');">What’s Drying Out Your Skin?</a> Medicines, medical problems, even hormones could be drying out your skin.</li> 
+     <li> <a href="http://www.webmd.com/beauty/dry-skin-13/cosmetic-procedures-skin-care-dry-skin" title="Go to next article" onclick="return sl(this,'','art-top_2');">Natural Remedies</a> 5 tips for keeping skin soft and healthy.</li> 
+     <li> <a href="http://www.webmd.com/beauty/dry-skin-13/ultra-dry-skin-when-call-doctor" title="Go to next article" onclick="return sl(this,'','art-top_3');">How Dry Is Too Dry?</a> Know when you should see the doctor.</li> 
+     <li> <a href="http://www.webmd.com/beauty/dry-skin-13/winter-dry-skin" title="Go to next article" onclick="return sl(this,'','art-top_4');">Prevent Chapping</a> What to do for cracked, dry skin? Try these prevention and treatment tips.</li> 
+     <li> <a href="http://www.webmd.com/beauty/dry-skin-13/chronic-dry-hands" title="Go to next article" onclick="return sl(this,'','art-top_5');">Help for Hands </a> Cracked, dry hands are uncomfortable. Find simple remedies to help.</li> 
+     <li> <a href="http://www.webmd.com/beauty/dry-skin-13/slideshow-cleaning-dry-skin" title="Go to next article" onclick="return sl(this,'','art-top_6');">Slideshow: Cleansing</a> Learn about soaps, moisturizers, scrubs, and other ways to keep skin healthy.</li> 
+     <li> <a href="http://www.webmd.com/beauty/dry-skin-13/video-remedies-dry-skin" title="Go to next article" onclick="return sl(this,'','art-top_7');">Video: Remedies</a> Expert tips for getting soft, touchable skin.</li> 
+     <li> <a href="http://www.webmd.com/beauty/dry-skin-13/video-dry-skin-myths-facts" title="Go to next article" onclick="return sl(this,'','art-top_8');">Video: Myths</a> Learn the truth about lotions, creams, soaps, and other remedies.</li> 
+     <li> <a href="http://www.webmd.com/beauty/dry-skin-13/video-making-moisturizers" title="Go to next article" onclick="return sl(this,'','art-top_9');">Video: Moisturizers</a> Which ingredients are best for your skin type?</li> 
+    </ul> 
+   </div> 
+   <script type="text/javascript">
+$(document).ready(function() { showNextLnk();});
+
+function showNextLnk() {
+	var cu = webmd.url.clear();
+	var sh = false;
+	var sg = false;
+	if(cu.indexOf("-results") > 0) { cu = cu.replace("-results",""); }
+	if(webmd.url.getParam("print")){
+		$(".nextArticleBox_rdr").css("display","none");
+	}
+	else{
+		$(".nextArticleBox_rdr ul").each(function() {
+			$(this).children("li").each(function() {
+				if(sh) {$(this).css("display","block"); $(".nextArticleBox_rdr").css("display","block"); sh = false; sg = true;}
+				else {$(this).css("display","none");}
+				$(this).children("a").each(function() {if(webmd.url.clear(this.href) == cu && !sg) {sh = true;}});
+			});
+			if(!sg) {$(this).children("li:first").css("display","block"); $(".nextArticleBox_rdr").css("display","block");}
+		});
+	}
+}
+</script> 
+   <div class="debug" style="display: none;">
+     False 
+   </div> 
+   <div id="article"> 
+    <div class="article_metadata"> 
+     <h2 class="article_title">Skin Care for Dry Skin</h2> 
+    </div> 
+    <div class="article_content"> 
+     <p>Got dry skin? There are many things you can do to make it smooth and supple.&nbsp;</p> 
+     <p>In many cases, all it takes is making a few adjustments to your daily skin care routine.</p> 
+     <h3>Care Strategies for Dry Skin When You Wash</h3> 
+     <p>Try these tips for the bath or shower:</p> 
+     <ul> 
+      <li> <b>Skip long, hot showers.</b> Hot water strips oils from the skin faster than warm water. Long showers or baths actually dry out your skin. Limit yourself to a single 5- or 10-minute warm shower or bath a day.</li> 
+      <li> <b>Use a gentle cleanser or shower gel with moisturizer.</b> Instead of harsh cleansers, go for unscented, soap-free, or mild soap cleansers.</li> 
+      <li> <b>Moisturize while skin is still moist.</b> Pat your skin with a towel after you shower or wash your face or hands, leaving it damp. Apply a moisturizer within three to five minutes of washing to lock moisture in.&nbsp;</li> 
+     </ul> 
+     <h3>What to Look for in a Moisturizer</h3> 
+     <p>You don't have to pay a fortune for a good, rich moisturizer. Read the label. Ingredients that may be helpful for dry skin include:</p> 
+     <ul> 
+      <li> <b>Ceramides. </b>Ceramides help the skin hold water and soothe dry skin. Synthetic ceramides may mimic the natural substances in the outermost layer of skin that help keep moisture in.</li> 
+      <li> <b>Dimethicone and glycerin. </b>These draw water to the skin and keep it there.</li> 
+      <li> <b>Hyaluronic acid.</b> Like ceramides, hyaluronic acid helps skin hold water.</li> 
+      <li> <b>Lanolin, mineral oil, and petroleum jelly (petrolatum).</b> These help skin hold on to water absorbed during bathing.</li> 
+     </ul> 
+     <p>Be sure to apply sunscreen to areas of your body that are exposed to the sun during the day. Look for a sunscreen with an SPF of 30 or more that says &quot;broad spectrum&quot; on the label.</p> 
+     <h3>5 Lifestyle Tips for Relieving Dry Skin</h3> 
+     <p>These strategies can also help make your skin supple and smooth:</p> 
+     <ul> 
+      <li>Plug in a humidifier at home to help keep skin hydrated during winter months when indoor air is dry.</li> 
+      <li>Wear cotton and other natural fibers. Wool, synthetics, or other fabrics can be scratchy and irritating.</li> 
+      <li>Drink plenty of water.</li> 
+      <li>Eat omega-3 foods. Essential fatty acids can help fortify the skin’s natural oil-retaining barriers. Foods rich in omega-3 include cold-water fish (salmon, halibut, sardines), flax, walnuts, and safflower oil.</li> 
+      <li>For redness or inflammation, apply a cool compress or an over-the-counter hydrocortisone cream on the area for a week. If these don’t provide relief, talk to your doctor.</li> 
+     </ul> 
+     <p>&nbsp;</p> 
+    </div> 
+    <div class="clear"> 
+    </div> 
+    <div class="article_footer"> 
+     <p class="pub_src">WebMD Medical Reference</p> 
+     <div class="sources"> 
+      <div class="view_sources"> 
+       <a href="" id="sources_toggle" class="hide">View Article Source</a> 
+      </div> 
+      <div id="article_source_text" style="display:none;"> 
+       <p>SOURCES:</p> 
+       <p>Medline Plus: “Dry skin.”</p> 
+       <p>American Osteopathic College of Dermatology: “Dry skin (xerosis).”</p> 
+       <p>Family Doctor: “Skin Problems: Dry, Itchy Skin.”</p> 
+       <p>American Academy of Dermatology (AAD): “Dermatologists’ Top 10 Tips for Relieving Dry Skin,” &quot;Winter Skin Care Guidelines,&quot; “Eczema Bathing and Moisturizing Guidelines.”</p> 
+       <p>Charles E. Crutchfield III, MD, dermatologist, Egan, Minn.; associate clinical professor of dermatology, University of Minnesota Medical School, Minneapolis.</p> 
+       <p> <i>Dermatology Nursing</i>, Oct. 1, 2006.</p> 
+      </div> 
+     </div> 
+     <script type="text/javascript">$('#sources_toggle').click(function() {
+  $('#article_source_text').toggle();
+  $('#sources_toggle').toggleClass('show');
+  return false;
+});</script> 
+     <p class="med_review">Reviewed by <a href="http://www.webmd.com/michael-w-smith" onclick="return sl(this,'','prog-lnk');">Michael W. Smith, MD</a> on February 15, 2013</p> 
+     <p class="copyright">&copy; 2013 WebMD, LLC. All rights reserved.</p> 
+    </div> 
+   </div> 
+   <script type="text/javascript">
+if (document.getElementById("headerLinks_print")) { 
+    setClass('headerLinks_print','headerLinks_fmt_on');
+};
+
+var insert1 = document.getElementById("ContentPane2");
+var urlDiv = articleUrl();
+if (insert1) {
+    insert1.appendChild(urlDiv);
+}
+</script> 
+   <link rel="stylesheet" type="text/css" href="http://img.webmd.com/dtmcms/live/webmd/PageBuilder_Assets/CSS/print.css" media="print" /> 
+   <style media="screen" type="text/css">#url_reference {display: none};
+			</style> 
+   <style media="print" type="text/css">#url_reference { display: block; line-height: 150%; margin-bottom: 10px; }
+#logo_rdr img { visibility: visible; }
+.titleBar_rdr .titleBarMiddle_fmt { padding-top: 1.5em;}
+				</style> 
+  </div> 
+  <div id="ContentPane6"></div> 
+  <div id="ContentPane7"></div> 
+  <div id="ContentPane8"></div> 
+  <div id="ContentPane9"></div> 
+  <div id="ContentPane10"></div> 
+  <div id="ContentPane11"></div> 
+  <div id="ContentPane12"></div> 
+  <div id="ContentPane13"></div> 
+  <div id="ContentPane14"></div> 
+  <div id="ContentPane15"></div> 
+  <div id="ContentPane16"></div> 
+  <div id="ContentPane17"></div> 
+  <div id="ContentPane18"></div> 
+  <div id="ContentPane19"></div> 
+  <div id="ContentPane20"></div> 
+ </div> 
+</div>

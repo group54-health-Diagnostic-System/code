@@ -1,0 +1,40 @@
+Cancer   link:http://www.webmd.com/cancer/default.htm
+Canker Sores   link:http://www.webmd.com/oral-health/guide/dental-health-canker-sores
+Carpal Tunnel Syndrome   link:http://www.webmd.com/osteoarthritis/arthritis-carpal-tunnel-syndrome
+Cataracts   link:http://www.webmd.com/healthy-aging/guide/eye-health-cataracts-eyes
+Cavernous Sinus Thrombosis   link:http://www.webmd.com/a-to-z-guides/cavernous-sinus-thrombosis
+Celiac Disease   link:http://www.webmd.com/digestive-disorders/celiac-disease/default.htm
+Celiac Disease: Starting a Gluten-Free Diet Slideshow   link:http://www.webmd.com/diet/slideshow-gluten-free-diet
+Cervical Cancer   link:http://www.webmd.com/cancer/tc/Cervical-Cancer-Topic-Overview
+Cervical Dysplasia   link:http://www.webmd.com/cancer/cervical-cancer/cervical-dysplasia-symptoms-causes-treatments
+Chicken Pox   link:http://www.webmd.com/a-to-z-guides/understanding-chickenpox-basics
+Children's Health   link:http://www.webmd.com/children/default.htm
+Child Development: First Year Milestones Slideshow   link:http://www.webmd.com/parenting/slideshow-baby-milestones-first-year
+Child Development: Second Year Milestones Slideshow   link:http://www.webmd.com/parenting/slideshow-toddler-milestones-second-year
+Childhood ADHD   link:http://www.webmd.com/add-adhd/childhood-adhd/default.htm
+Childhood Skin Problems Slideshow   link:http://children.webmd.com/slideshow-common-childhood-skin-problems
+Chlamydia   link:http://www.webmd.com/sexual-conditions/sexual-health-chlamydia
+Cholera   link:http://www.webmd.com/a-to-z-guides/cholera-faq
+Cholesterol Management   link:http://www.webmd.com/cholesterol-management/default.htm
+Chronic Fatigue Syndrome   link:http://www.webmd.com/a-to-z-guides/Chronic-Fatigue-Syndrome-Topic-Overview
+Chronic Kidney Disease   link:http://www.webmd.com/a-to-z-guides/Chronic-Kidney-Disease-Topic-Overview
+Chronic Lymphocytic Leukemia   link:http://www.webmd.com/cancer/chronic-lymphocytic-leukemia
+Chronic Pelvic Pain   link:http://www.webmd.com/a-to-z-guides/Chronic-Female-Pelvic-Pain-Topic-Overview
+Cloning   link:http://www.webmd.com/healthy-aging/features/cloning-facts-fiction
+Cold and Flu   link:http://www.webmd.com/cold-and-flu/default.htm
+Cold Sores   link:http://www.webmd.com/skin-problems-and-treatments/tc/Cold-Sores-Topic-Overview
+Colorectal Cancer   link:http://www.webmd.com/colorectal-cancer/default.htm
+Conception Slideshow   link:http://www.webmd.com/baby/slideshow-conception
+Congestive Heart Failure   link:http://www.webmd.com/a-to-z-guides/Heart-Failure-Overview
+Conjunctivitis   link:http://www.webmd.com/eye-health/eye-health-conjunctivitis
+Connective Tissue Disease   link:http://www.webmd.com/a-to-z-guides/connective-tissue-disease
+Constipation   link:http://www.webmd.com/digestive-disorders/digestive-diseases-constipation
+Contraception   link:http://www.webmd.com/a-to-z-guides/Birth-Control-Overview
+COPD (Chronic Obstructive Pulmonary Dise...   link:http://www.webmd.com/copd/default.htm
+Cornea Transplant   link:http://www.webmd.com/eye-health/cornea-transplant-surgery
+Coughs   link:http://www.webmd.com/cold-and-flu/tc/Coughs-Topic-Overview
+Creatinine   link:http://www.webmd.com/a-to-z-guides/creatinine-and-creatinine-clearance-blood-tests
+Crohn's Disease   link:http://www.webmd.com/ibd-crohns-disease/default.htm
+Croup   link:http://www.webmd.com/children/tc/Croup-Topic-Overview
+Cystic Fibrosis   link:http://www.webmd.com/children/understanding-cystic-fibrosis-basics
+Cysts   link:http://www.webmd.com/skin-problems-and-treatments/cysts

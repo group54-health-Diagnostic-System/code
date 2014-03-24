@@ -1,0 +1,16 @@
+Labor and Delivery   link:http://www.webmd.com/baby/guide/pregnancy-labor
+Lactose Intolerance   link:http://www.webmd.com/digestive-disorders/tc/Lactose-Intolerance-Topic-Overview
+Laryngitis   link:http://www.webmd.com/a-to-z-guides/Laryngitis-Topic-Overview
+LDL Cholesterol   link:http://www.webmd.com/cholesterol-management/default.htm
+Leukemia   link:http://www.webmd.com/cancer/tc/Leukemia-Topic-Overview
+Leukemia in Children   link:http://www.webmd.com/cancer/childhood-leukemia-symptoms-treatments
+Lice   link:http://www.webmd.com/children/tc/Lice-Topic-Overview
+Liver Cancer   link:http://www.webmd.com/cancer/understanding-liver-cancer-basic-information
+Liver Failure   link:http://www.webmd.com/digestive-disorders/digestive-diseases-liver-failure
+Lower Back Pain   link:http://www.webmd.com/back-pain/tc/Low-Back-Pain-Topic-Overview
+Low Residue Diet   link:http://www.webmd.com/ibd-crohns-disease/low-residue-diet-foods
+Lung Cancer   link:http://www.webmd.com/lung-cancer/default.htm
+Lung Disease   link:http://www.webmd.com/lung/default.htm
+Lung Transplant   link:http://www.webmd.com/lung/lung-transplant-surgery
+Lupus   link:http://www.webmd.com/lupus/default.htm
+Lyme Disease   link:http://www.webmd.com/arthritis/tc/Lyme-Disease-Topic-Overview
